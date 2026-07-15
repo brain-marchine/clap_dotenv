@@ -1,0 +1,17 @@
+[package]
+name = "clap_dotenv"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Generate commented .env templates from clap::Command"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/brain-marchine/clap_dotenv"
+readme = "README.md"
+keywords = ["clap", "cli", "dotenv", "env"]
+categories = ["command-line-interface"]
+
+[dependencies]
+clap = { version = "4.5", default-features = false, features = ["std", "env", "help"] }
+
+[dev-dependencies]
+clap = { version = "4.5", features = ["derive", "env"] }
